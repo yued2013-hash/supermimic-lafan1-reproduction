@@ -1,0 +1,9 @@
+{
+  "upstream_commit": "cb334ff674b2f57248f33f8c21b7fb526fbdf8cc",
+  "original_train_sha256": "b422a8db1f7ba8899fa82b6aaa1eced937fadb18bc65e23dbd974957e1a14d0e",
+  "patched_train_sha256": "37488a1b7f36c5bc204d467ea7a5ca437fd1d04d83533ffc2c4adbab5403d884",
+  "policy_loss_divisor": 32,
+  "policy_gradient_norm_clip": 0.03125,
+  "change": "Use a common divisor32 for both H16/H32; all other source unchanged",
+  "validation": "Source transform/AST checks only; this does not establish GPU gradient parity"
+}

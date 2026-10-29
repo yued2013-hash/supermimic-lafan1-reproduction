@@ -58,7 +58,7 @@ python scripts/verify_results.py
 python -m unittest discover -s tests -v
 ```
 
-上述命令只用Python标准库，核对40条唯一动作、每条完整执行步数、回报统计、有限训练日志和checkpoint元数据，不启动训练。
+主核验流程只用Python标准库；准备测试中的坐标检查可选NumPy（未安装时跳过）。上述命令核对40条唯一动作、完整步数、回报统计和训练记录，不启动训练。真实世界模型诊断需要额外的CPU或GPU依赖。
 
 ## 重新训练与评估
 
@@ -74,7 +74,7 @@ bash scripts/evaluate.sh "$CODE_DIR" "$CHECKPOINT" "$LIBRARY_DIR" "$EVAL_OUTPUT_
 
 ## 后续实验设计
 
-[H=16/32想象长度对照](docs/horizon_ablation.md)已完成静态源码审查，发现策略loss除H与固定梯度裁剪存在耦合。实验配置暂为设计稿，尚未运行，不作为新增性能结果。
+[H=16/32想象长度对照](docs/horizon_ablation.md)发现策略loss除H与固定梯度裁剪存在耦合。独立源码准备、640窗口统一诊断及真实checkpoint的CPU检查已完成，见 [CPU准备验收](docs/cpu_preparation.md)。两组新训练与GPU编译验证尚未运行，不将原模型诊断作为新消融性能结果。
 
 ## 已知限制
 

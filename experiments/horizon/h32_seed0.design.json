@@ -1,5 +1,5 @@
 {
-  "status": "DESIGN_ONLY_NOT_RUN",
+  "status": "READY_FOR_GPU_SMOKE_NOT_TRAINED",
   "upstream_commit": "cb334ff674b2f57248f33f8c21b7fb526fbdf8cc",
   "training_flags": {
     "preset": "recommended",
@@ -16,13 +16,17 @@
     "ckpt_every": 2000,
     "eval_every": 2000,
     "eval_clips": 0,
-    "eval_envs": 40
+    "eval_envs": 40,
+    "wall_hours": 1000000000.0
   },
   "protocol": {
     "policy_loss_divisor": 32,
-    "loss_divisor_patch_applied": false,
-    "fixed_diagnostic_model_evaluation_ready": false,
+    "fixed_diagnostic_model_evaluation_ready": true,
     "budget": "equal simulator iterations, not equal wall time",
-    "new_instance_pair_required": true
+    "new_instance_pair_required": true,
+    "loss_divisor_patch_recipe_ready": true,
+    "specific_gpu_run_patch_applied": false,
+    "cpu_baseline_validated": true,
+    "diagnostic_sha256": "90aadacc035c60ebfa9feac5740aed61a7dba86b143a718d5fe254d69cb046da"
   }
 }
