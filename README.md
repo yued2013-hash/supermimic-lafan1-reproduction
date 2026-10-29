@@ -2,7 +2,7 @@
 
 **基于可微世界模型与 BPTT 的人形机器人动作模仿：实验复现、核验脚本与结果展示。**
 
-[演示页面](https://yued2013-hash.github.io/supermimic-lafan1-reproduction/) · [48秒仿真视频](docs/media/demo.mp4) · [实验报告](docs/experiment.md) · [40条动作评估](results/lafan1_seed0/per_clip.csv) · [简历项目描述](docs/resume.md)
+[演示页面](https://yued2013-hash.github.io/supermimic-lafan1-reproduction/) · [48秒仿真视频](docs/media/demo.mp4) · [实验报告](docs/experiment.md) · [40条动作评估](results/lafan1_seed0/per_clip.csv) · [复现步骤](docs/reproduce.md)
 
 ![Reference versus physically simulated policy](docs/media/demo_poster.png)
 
@@ -25,9 +25,9 @@
 
 ![Training curves](docs/media/training_curves.png)
 
-## 项目工作与代码归属
+## 实验内容与实现来源
 
-本项目完成了指定第三方实现的环境配置、数据准备、从零训练、checkpoint保存/加载、独立FP32评估、完整物理轨迹与视频导出、实验核验与归档。这里发布**独立编写的运行/校验脚本和实验材料**，不是 SuperMimic 官方实现，也不把上游训练框架作为个人原创。
+本项目记录指定第三方实现的环境配置、数据准备、随机初始化训练、checkpoint保存/加载、独立FP32评估、物理轨迹与视频导出。仓库提供**独立编写的运行与核验脚本、实验配置和结果记录**；训练框架来自下述固定版本的第三方实现。
 
 - 论文：[SuperMimic](https://arxiv.org/abs/2610.28480)，[官方项目页](https://supermimic.github.io/)。
 - 实际训练代码：[Shimingyi/allmimic](https://github.com/Shimingyi/allmimic/tree/cb334ff674b2f57248f33f8c21b7fb526fbdf8cc)，固定commit `cb334ff674b2f57248f33f8c21b7fb526fbdf8cc`。
@@ -77,7 +77,6 @@ bash scripts/evaluate.sh "$CODE_DIR" "$CHECKPOINT" "$LIBRARY_DIR" "$EVAL_OUTPUT_
 - 专门的compiled-BPTT完整一致性测试曾在900秒限制下超时，exit124；不能声称该测试通过。正式训练完成与该项测试结论分开陈述。
 - 沿用上游评估配置，包括其已知约束池容量限制；未通过修改物理参数追求分数。
 - 未做与不同实现/评估协议的公平性能对比，不将论文的加速比或实机结果写成本项目成果。
-- Dex5迁移仍在推进，尚无方法性能提升或部署结果。[Dex5仓库](https://github.com/yued2013-hash/dex5_penspin)。
 
 ## 授权与致谢
 
