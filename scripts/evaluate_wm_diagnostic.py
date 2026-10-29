@@ -23,8 +23,10 @@ def evaluate(code,checkpoint,dataset,output,device='cpu',batch=32,max_windows=No
     from allmimic.networks import state_delta,state_error
     info['pose_kinematics_check']=validate_pose_kinematics(wm,states[:,0])
     # Common scales depend ONLY on the immutable diagnostic ground truth, never on a checkpoint normalizer.
+    # Compute them on CPU even when model inference is on GPU, avoiding device-specific reductions.
     with torch.no_grad():
-        deltas=state_delta(flat_to_state(states[:,:-1].reshape(-1,71)),flat_to_state(states[:,1:].reshape(-1,71)))
+        ground_truth_cpu=torch.tensor(data['states'],dtype=torch.float32)
+        deltas=state_delta(flat_to_state(ground_truth_cpu[:,:-1].reshape(-1,71)),flat_to_state(ground_truth_cpu[:,1:].reshape(-1,71)))
         scale=deltas.std(0,unbiased=False).clamp_min(1e-3)
     total=len(states);n=min(total,max_windows) if max_windows else total
     results={h:[] for h in [1,4,8,16]};baselines={h:[] for h in results}
