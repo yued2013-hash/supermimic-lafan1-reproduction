@@ -2,7 +2,7 @@
 
 **基于可微世界模型与 BPTT 的人形机器人动作模仿：实验复现、核验脚本与结果展示。**
 
-[演示页面](https://yued2013-hash.github.io/supermimic-lafan1-reproduction/) · [48秒仿真视频](docs/media/demo.mp4) · [实验报告](docs/experiment.md) · [40条动作评估](results/lafan1_seed0/per_clip.csv) · [复现步骤](docs/reproduce.md)
+[演示页面](https://yued2013-hash.github.io/supermimic-lafan1-reproduction/) · [48秒仿真视频](docs/media/demo.mp4) · [实验报告](docs/experiment.md) · [40条动作评估](results/lafan1_seed0/per_clip.csv) · [复现步骤](docs/reproduce.md) · [实现与贡献](CONTRIBUTIONS.md)
 
 ![Reference versus physically simulated policy](docs/media/demo_poster.png)
 
@@ -71,6 +71,10 @@ bash scripts/evaluate.sh "$CODE_DIR" "$CHECKPOINT" "$LIBRARY_DIR" "$EVAL_OUTPUT_
 ```
 
 完整40条原始动作、50Hz物理回放、40条完整视频、最终及7个中间checkpoint已做本地独立备份与哈希核验。本公开仓库提供代表视频、全40项指标、日志与配置；**不包含原始动作文件、机器人资产、上游源代码或大体积权重**。
+
+## 后续实验设计
+
+[H=16/32想象长度对照](docs/horizon_ablation.md)已完成静态源码审查，发现策略loss除H与固定梯度裁剪存在耦合。实验配置暂为设计稿，尚未运行，不作为新增性能结果。
 
 ## 已知限制
 

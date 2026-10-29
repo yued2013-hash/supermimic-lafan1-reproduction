@@ -1,0 +1,28 @@
+{
+  "status": "DESIGN_ONLY_NOT_RUN",
+  "upstream_commit": "cb334ff674b2f57248f33f8c21b7fb526fbdf8cc",
+  "training_flags": {
+    "preset": "recommended",
+    "seed": 0,
+    "num_envs": 4096,
+    "iterations": 8000,
+    "horizon": 32,
+    "pi_batch": 4096,
+    "pi_clip": 0.03125,
+    "k": 8,
+    "wm_batch": 2048,
+    "wm_batches": 10,
+    "utd": 0.4,
+    "ckpt_every": 2000,
+    "eval_every": 2000,
+    "eval_clips": 0,
+    "eval_envs": 40
+  },
+  "protocol": {
+    "policy_loss_divisor": 32,
+    "loss_divisor_patch_applied": false,
+    "fixed_diagnostic_model_evaluation_ready": false,
+    "budget": "equal simulator iterations, not equal wall time",
+    "new_instance_pair_required": true
+  }
+}
