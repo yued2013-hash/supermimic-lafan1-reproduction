@@ -1,0 +1,13 @@
+{
+  "python": "3.11.18",
+  "torch": "2.14.1+cu126",
+  "mjlab": "1.2.0",
+  "mujoco": "3.5.0",
+  "mujoco-warp": "3.5.0",
+  "warp-lang": "1.12.0",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "gpu": "RTX 4090 24GB",
+  "os": "Ubuntu 22.04",
+  "driver": "580.76.05"
+}

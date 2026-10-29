@@ -1,0 +1,23 @@
+{
+  "upstream_repository": "https://github.com/Shimingyi/allmimic",
+  "upstream_commit": "cb334ff674b2f57248f33f8c21b7fb526fbdf8cc",
+  "data_repository": "lvhaidong/LAFAN1_Retargeting_Dataset",
+  "data_revision": "ce1572906efe6157840e8474d5a0d7aa87481e74",
+  "seed": 0,
+  "training_iterations": 30665,
+  "policy_updates": 12266,
+  "environment_steps": 125865984,
+  "accumulated_training_seconds": 7200.166703939438,
+  "fp32_evaluation": {
+    "clips": 40,
+    "failed": 0,
+    "success_rate": 1.0,
+    "mean_ret_paper": 0.9271078675985336,
+    "mean_ret_clip01": 0.9271078675985336,
+    "frame_weighted_ret_paper": 0.928947510100631,
+    "hours": 2.4506666666666668,
+    "eval_seconds": 98.6
+  },
+  "checkpoint_sha256": "4198ee45fa9a8d8560bfca6709e44ff6aee9c9b5fb1472e28885dc1febfe1752",
+  "scope": "Single-seed, in-library LAFAN1 tracking. No unseen-motion, multi-seed or real-robot result."
+}

@@ -1,0 +1,334 @@
+{
+ "summary": {
+  "clips": 40,
+  "failed": 0,
+  "success_rate": 1.0,
+  "mean_ret_paper": 0.9271078675985336,
+  "mean_ret_clip01": 0.9271078675985336,
+  "frame_weighted_ret_paper": 0.928947510100631,
+  "hours": 2.4506666666666668,
+  "eval_seconds": 98.6
+ },
+ "clips": [
+  {
+   "name": "dance1_subject1.csv",
+   "frames": 6574,
+   "steps": 6573,
+   "failed": false,
+   "ret_paper": 0.9202255010604858,
+   "ret_sum": 604.8642218470574
+  },
+  {
+   "name": "dance1_subject2.csv",
+   "frames": 6574,
+   "steps": 6573,
+   "failed": false,
+   "ret_paper": 0.8984997272491455,
+   "ret_sum": 590.5838707208634
+  },
+  {
+   "name": "dance1_subject3.csv",
+   "frames": 6574,
+   "steps": 6573,
+   "failed": false,
+   "ret_paper": 0.9466252326965332,
+   "ret_sum": 622.2167654514313
+  },
+  {
+   "name": "dance2_subject1.csv",
+   "frames": 11284,
+   "steps": 11283,
+   "failed": false,
+   "ret_paper": 0.9067045450210571,
+   "ret_sum": 1023.0347381472587
+  },
+  {
+   "name": "dance2_subject2.csv",
+   "frames": 11284,
+   "steps": 11283,
+   "failed": false,
+   "ret_paper": 0.9171119332313538,
+   "ret_sum": 1034.7773942649364
+  },
+  {
+   "name": "dance2_subject3.csv",
+   "frames": 11284,
+   "steps": 11283,
+   "failed": false,
+   "ret_paper": 0.9484883546829224,
+   "ret_sum": 1070.1794105887413
+  },
+  {
+   "name": "dance2_subject4.csv",
+   "frames": 11284,
+   "steps": 11283,
+   "failed": false,
+   "ret_paper": 0.914221465587616,
+   "ret_sum": 1031.516079622507
+  },
+  {
+   "name": "dance2_subject5.csv",
+   "frames": 11284,
+   "steps": 11283,
+   "failed": false,
+   "ret_paper": 0.9425902962684631,
+   "ret_sum": 1063.524631279707
+  },
+  {
+   "name": "fallAndGetUp1_subject1.csv",
+   "frames": 8410,
+   "steps": 8409,
+   "failed": false,
+   "ret_paper": 0.8941804766654968,
+   "ret_sum": 751.9163628280163
+  },
+  {
+   "name": "fallAndGetUp1_subject4.csv",
+   "frames": 8410,
+   "steps": 8409,
+   "failed": false,
+   "ret_paper": 0.8735749125480652,
+   "ret_sum": 734.589143961668
+  },
+  {
+   "name": "fallAndGetUp1_subject5.csv",
+   "frames": 8410,
+   "steps": 8409,
+   "failed": false,
+   "ret_paper": 0.8953308463096619,
+   "ret_sum": 752.8837086617947
+  },
+  {
+   "name": "fallAndGetUp2_subject2.csv",
+   "frames": 8195,
+   "steps": 8194,
+   "failed": false,
+   "ret_paper": 0.8974921703338623,
+   "ret_sum": 735.4050843715668
+  },
+  {
+   "name": "fallAndGetUp2_subject3.csv",
+   "frames": 8195,
+   "steps": 8194,
+   "failed": false,
+   "ret_paper": 0.8794600963592529,
+   "ret_sum": 720.6296029567719
+  },
+  {
+   "name": "fallAndGetUp3_subject1.csv",
+   "frames": 5109,
+   "steps": 5108,
+   "failed": false,
+   "ret_paper": 0.9178376197814941,
+   "ret_sum": 468.8314561843872
+  },
+  {
+   "name": "fight1_subject2.csv",
+   "frames": 12244,
+   "steps": 12243,
+   "failed": false,
+   "ret_paper": 0.9122164845466614,
+   "ret_sum": 1116.8266420304776
+  },
+  {
+   "name": "fight1_subject3.csv",
+   "frames": 12244,
+   "steps": 12243,
+   "failed": false,
+   "ret_paper": 0.9159756898880005,
+   "ret_sum": 1121.4290371298791
+  },
+  {
+   "name": "fight1_subject5.csv",
+   "frames": 12244,
+   "steps": 12243,
+   "failed": false,
+   "ret_paper": 0.9388535022735596,
+   "ret_sum": 1149.438342833519
+  },
+  {
+   "name": "fightAndSports1_subject1.csv",
+   "frames": 12257,
+   "steps": 12256,
+   "failed": false,
+   "ret_paper": 0.9146369099617004,
+   "ret_sum": 1120.9789968490602
+  },
+  {
+   "name": "fightAndSports1_subject4.csv",
+   "frames": 12257,
+   "steps": 12256,
+   "failed": false,
+   "ret_paper": 0.9293171167373657,
+   "ret_sum": 1138.9710582733155
+  },
+  {
+   "name": "jumps1_subject1.csv",
+   "frames": 12222,
+   "steps": 12221,
+   "failed": false,
+   "ret_paper": 0.9232754111289978,
+   "ret_sum": 1128.3348799407484
+  },
+  {
+   "name": "jumps1_subject2.csv",
+   "frames": 12222,
+   "steps": 12221,
+   "failed": false,
+   "ret_paper": 0.9092100858688354,
+   "ret_sum": 1111.145645940304
+  },
+  {
+   "name": "jumps1_subject5.csv",
+   "frames": 12222,
+   "steps": 12221,
+   "failed": false,
+   "ret_paper": 0.9170040488243103,
+   "ret_sum": 1120.6706480681896
+  },
+  {
+   "name": "run1_subject2.csv",
+   "frames": 11890,
+   "steps": 11889,
+   "failed": false,
+   "ret_paper": 0.9261549115180969,
+   "ret_sum": 1101.1055743038655
+  },
+  {
+   "name": "run1_subject5.csv",
+   "frames": 11890,
+   "steps": 11889,
+   "failed": false,
+   "ret_paper": 0.9147826433181763,
+   "ret_sum": 1087.5850846409799
+  },
+  {
+   "name": "run2_subject1.csv",
+   "frames": 12240,
+   "steps": 12239,
+   "failed": false,
+   "ret_paper": 0.9182397127151489,
+   "ret_sum": 1123.8335843920709
+  },
+  {
+   "name": "run2_subject4.csv",
+   "frames": 12240,
+   "steps": 12239,
+   "failed": false,
+   "ret_paper": 0.9135076403617859,
+   "ret_sum": 1118.0420010387897
+  },
+  {
+   "name": "sprint1_subject2.csv",
+   "frames": 13655,
+   "steps": 13654,
+   "failed": false,
+   "ret_paper": 0.9319072365760803,
+   "ret_sum": 1272.4261408209802
+  },
+  {
+   "name": "sprint1_subject4.csv",
+   "frames": 13655,
+   "steps": 13654,
+   "failed": false,
+   "ret_paper": 0.9125314354896545,
+   "ret_sum": 1245.9704220175745
+  },
+  {
+   "name": "walk1_subject1.csv",
+   "frames": 13065,
+   "steps": 13064,
+   "failed": false,
+   "ret_paper": 0.9667741656303406,
+   "ret_sum": 1262.993769979477
+  },
+  {
+   "name": "walk1_subject2.csv",
+   "frames": 13065,
+   "steps": 13064,
+   "failed": false,
+   "ret_paper": 0.9626632332801819,
+   "ret_sum": 1257.6232479572298
+  },
+  {
+   "name": "walk1_subject5.csv",
+   "frames": 13065,
+   "steps": 13064,
+   "failed": false,
+   "ret_paper": 0.9558186531066895,
+   "ret_sum": 1248.6814884185792
+  },
+  {
+   "name": "walk2_subject1.csv",
+   "frames": 11909,
+   "steps": 11908,
+   "failed": false,
+   "ret_paper": 0.9491626620292664,
+   "ret_sum": 1130.2628979444505
+  },
+  {
+   "name": "walk2_subject3.csv",
+   "frames": 11909,
+   "steps": 11908,
+   "failed": false,
+   "ret_paper": 0.9544766545295715,
+   "ret_sum": 1136.5908002138137
+  },
+  {
+   "name": "walk2_subject4.csv",
+   "frames": 11909,
+   "steps": 11908,
+   "failed": false,
+   "ret_paper": 0.9622359275817871,
+   "ret_sum": 1145.830542564392
+  },
+  {
+   "name": "walk3_subject1.csv",
+   "frames": 12330,
+   "steps": 12329,
+   "failed": false,
+   "ret_paper": 0.958255410194397,
+   "ret_sum": 1181.433095228672
+  },
+  {
+   "name": "walk3_subject2.csv",
+   "frames": 12330,
+   "steps": 12329,
+   "failed": false,
+   "ret_paper": 0.9663070440292358,
+   "ret_sum": 1191.359954583645
+  },
+  {
+   "name": "walk3_subject3.csv",
+   "frames": 12330,
+   "steps": 12329,
+   "failed": false,
+   "ret_paper": 0.8886880874633789,
+   "ret_sum": 1095.6635430336
+  },
+  {
+   "name": "walk3_subject4.csv",
+   "frames": 12330,
+   "steps": 12329,
+   "failed": false,
+   "ret_paper": 0.9606709480285645,
+   "ret_sum": 1184.4112118244173
+  },
+  {
+   "name": "walk3_subject5.csv",
+   "frames": 12330,
+   "steps": 12329,
+   "failed": false,
+   "ret_paper": 0.9590868949890137,
+   "ret_sum": 1182.458232831955
+  },
+  {
+   "name": "walk4_subject1.csv",
+   "frames": 8195,
+   "steps": 8194,
+   "failed": false,
+   "ret_paper": 0.9702190160751343,
+   "ret_sum": 794.997461771965
+  }
+ ]
+}
