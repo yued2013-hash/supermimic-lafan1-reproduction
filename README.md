@@ -6,6 +6,18 @@
 
 ![Reference versus physically simulated policy](docs/media/demo_poster.png)
 
+## 快速浏览
+
+| 阅读目标 | 入口 |
+| --- | --- |
+| 看参考动作与物理策略对照 | [在线展示](https://yued2013-hash.github.io/supermimic-lafan1-reproduction/) · [48秒视频](docs/media/demo.mp4) |
+| 核对40条完整动作结果 | [逐动作指标](results/lafan1_seed0/per_clip.csv) · [实验报告](docs/experiment.md) |
+| 理解实验实现与来源边界 | [实现与贡献](CONTRIBUTIONS.md) · [第三方来源](THIRD_PARTY_NOTICES.md) |
+| 复验结果或重新训练 | [复现步骤](docs/reproduce.md) · 下方无GPU快速核验 |
+
+**实验结论：** 基于社区实现，单RTX4090从随机初始化联合训练；单seed、训练库内40条长动作独立FP32评估全部完成，平均归一化回报0.9271。约2小时为累计训练计时，不等于完整租机耗时。
+
+
 ## 结果
 
 | 项目 | 实测 |
@@ -85,3 +97,4 @@ bash scripts/evaluate.sh "$CODE_DIR" "$CHECKPOINT" "$LIBRARY_DIR" "$EVAL_OUTPUT_
 ## 授权与致谢
 
 上游固定commit的LICENSE说明再分发授权尚未明确，因此此仓库不重新分发其训练源代码；数据与机器人资产沿用各自条款。见 [第三方说明](THIRD_PARTY_NOTICES.md)。本仓库暂未为独立材料选择通用开源许可证，不应把上游占位LICENSE视为MIT授权。
+
