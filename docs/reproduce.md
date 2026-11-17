@@ -51,5 +51,3 @@ bash scripts/evaluate.sh "$CODE_DIR" "$CHECKPOINT" "$LIBRARY_DIR" "$EVAL_OUTPUT_
 ## 7. Reading the saved experiment
 
 `results/lafan1_seed0/checkpoint_metadata.json` stores the actual cfg and counters; the final checkpoint SHA256 is in `results/summary.json`. Weights and raw motion data are not in Git. The checkpoint contains the world model,policy,critic and optimizer states; the replay buffer is not saved by the implementation.
-
-The specialized compiled-BPTT consistency harness previously timed out after900 seconds (exit124). Basic tests and completed training do not establish that missing validation; rerun it separately if strict compilation-gradient parity is required.
